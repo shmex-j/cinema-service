@@ -10,15 +10,15 @@ Registration with `POST /register` endpoint by email and password, and repeat pa
 
 ### Core functionality
 
-With this application you can do diffrent cinema-related actions: create movies/cinema halls/movie sessions, allow users to order tickets to certain movie sessions.
+With this application you can do different cinema-related actions: create movies/cinema halls/movie sessions, allow users to order tickets to certain movie sessions.
 
 Controller layer giving access to such api endpoints:
 
-`POST /movies` - add movie, with certain title and decription
+`POST /movies` - add movie, with certain title and description
 
 `GET /movies` - get list of movies
 
-`POST /cinema-halls` - add cinema hall, with certain capacity and decription
+`POST /cinema-halls` - add cinema hall, with certain capacity and description
 
 `GET /cinema-halls` - get list of cinema halls
 
@@ -50,7 +50,7 @@ Spring MVC and Spring Security configs in `cinema.config` package
 
 1. Preview level: packages `cinema.controller`, `cinema.dto`
 2. Business level: packages `cinema.service`, `cinema.model`
-3. Persistance level: package `cinema.dao`
+3. Persistence level: package `cinema.dao`
 + MySql database
 
 ## Technologies
@@ -59,26 +59,26 @@ Application based on Spring Framework version 5.2.2.RELEASE
 
 ### Web
 
-Apache Tomcat 9.0.68 as web server. Spring MVC as web framework, javax Servlet API version 4.0.1 . Jakson databind version 2.14.0
+Apache Tomcat 9.0.68 as web server. Spring MVC as web framework, javax Servlet API version 4.0.1 . Jackson databind version 2.14.0
 
 ### Security
 
 Spring Security to manage authentication and authorization
 
-### Persistance
+### Persistence
 
 Hibernate ORM version 5.4.23.FINAL. MySql connector version 8.0.22
 
 ### Other
 
-Apache Commons 2.8.0. Javax annotaton API 1.3.2. Apache Maven as build platform
+Apache Commons 2.8.0. Javax annotation API 1.3.2. Apache Maven as build platform
 
 ## SetUp guide
 
 ### Prerequisites
 
 You must have JDK at least 11 version, and maven installed to build and launch the application, and Git to clone repository.
-Also you shoud have Tomcat installed to run application
+Also, you should have Tomcat installed to run application
 Also you should install MySql with Workbench and CLI to create MySql database, or use another solution like remote MySql repository services.
 
 - [JDK installation instruction for Windows](https://access.redhat.com/documentation/en-us/openjdk/11/html-single/installing_and_using_openjdk_11_for_windows/index)
@@ -92,7 +92,8 @@ Remember connection related parameters such as hostname/port, username and passw
 Using [sql query tool](https://www.youtube.com/watch?v=M-OXq10Tj-E&ab_channel=GeekyShows) run [this](/src/main/resources/init-db.sql) SQL script to initialize db. This will create db schema that uses in this app.
 
 Configuring application
-Clone repository using Git CLI or IDE. In src/main/resources fill file db.properties with your db parameters.
+Clone repository using Git CLI or IDE. In src/main/resources change properties 
+in db.properties file to your db parameters, including username and password of connection remembered when you created one.
 
 ### Running with IDE | using IntellyJ IDEA Ultimate
 
