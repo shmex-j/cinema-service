@@ -4,7 +4,6 @@ import cinema.dto.request.UserRequestDto;
 import cinema.dto.response.UserResponseDto;
 import cinema.model.User;
 import cinema.service.AuthenticationService;
-import cinema.service.RoleService;
 import cinema.service.mapper.ResponseDtoMapper;
 import javax.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;

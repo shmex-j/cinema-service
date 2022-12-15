@@ -7,7 +7,6 @@ import cinema.model.ShoppingCart;
 import cinema.model.Ticket;
 import cinema.model.User;
 import cinema.service.ShoppingCartService;
-import java.util.ArrayList;
 import java.util.Collections;
 import org.springframework.stereotype.Service;
 
