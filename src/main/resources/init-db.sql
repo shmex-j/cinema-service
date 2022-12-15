@@ -1,4 +1,6 @@
-CREATE DATABASE `cinema`;
+CREATE DATABASE IF NOT EXISTS `cinema`;
+
+USE `cinema`;
 
 CREATE TABLE `cinema_halls` (
                                 `id` bigint NOT NULL AUTO_INCREMENT,
@@ -93,7 +95,3 @@ CREATE TABLE `shopping_carts_tickets` (
                                           CONSTRAINT `FKaw8rn6oivawiyro857w06we16` FOREIGN KEY (`ticket_id`) REFERENCES `tickets` (`id`),
                                           CONSTRAINT `FKm5n3i4h3nk1p1yqywkn1kpej6` FOREIGN KEY (`shopping_cart_id`) REFERENCES `shopping_carts` (`id`)
 );
-
-
-
-

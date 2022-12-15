@@ -14,15 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthenticationController {
     private final AuthenticationService authService;
-    private final RoleService roleService;
     private final ResponseDtoMapper<UserResponseDto, User> userDtoResponseMapper;
 
     public AuthenticationController(AuthenticationService authService,
-                                    RoleService roleService,
                                     ResponseDtoMapper<UserResponseDto, User>
                                             userDtoResponseMapper) {
         this.authService = authService;
-        this.roleService = roleService;
         this.userDtoResponseMapper = userDtoResponseMapper;
     }
 
